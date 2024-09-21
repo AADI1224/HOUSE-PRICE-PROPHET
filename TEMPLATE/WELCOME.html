@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>priceprophet</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body{
+            background-image: url("{%static 'rty.jpg'%}");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1{
+            font-family: Rockybilly;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 150px;
+        }
+        .btnn{
+            width: 110px;
+            height: 40px;
+            background: #ff7200;
+            border: none;
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #fff;
+            transition: 0.4s ease;
+        }
+        .btnn:hover{
+             background: #fff;
+             color: #ff7200;
+        }
+        .btnn a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+        <h1>House Price Prediction System</h1>
+        <div style="text-align: center;">
+            <img src = 'static\logo.png' width="300" height="250">
+        </div>
+        <div class="w3-container w3-center">
+            <form action="{% url 'HOME' %}">
+                {% csrf_token %}
+                <button class="btnn"><a href="#">START</a></button>
+            </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <style media="screen">
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="about-section">
+      <h1>About Us Page</h1>
+      <p>Welcome to Price Prophet, your premier destination for accurate and reliable house price predictions using state-of-the-art machine learning and Python technology.</p>
+      <p>At Price Prophet, we are dedicated to revolutionizing the real estate industry by providing innovative solutions for both homebuyers and real estate professionals.</p><br>
+      <h1>Our Mission</h1>
+      <p>Our mission at Price Prophet is to empower individuals and businesses in the real estate market with the tools and information they need to make informed decisions.</p>
+      <p>Whether you're a prospective homebuyer searching for your dream home or a seasoned real estate agent looking to streamline your processes, we are here to support you every step of the way.</p><br>
+      <h1>What we offer</h1>
+      <p>Our website utilizes cutting-edge machine learning algorithms and Python programming to accurately predict house prices based on various factors such as size, location, amenities, and market trends. Say goodbye to guesswork and uncertainty – with Price Prophet, you can trust that you're getting the most accurate price estimates available.</p>
+      <p>We understand the importance of simplicity and ease of use. That's why our website features an intuitive interface that allows users to navigate effortlessly, whether they're searching for properties, accessing price predictions, or managing their accounts.</p>
+      <p>Create your account on Price Prophet to unlock personalized features tailored to your needs. Real estate brokers can showcase their listings and connect with potential buyers, while users can save their favorite properties, receive customized recommendations, and track market trends in real-time.</p>
+      <p>Explore a vast selection of properties listed on our website, ranging from cozy apartments to luxurious estates. With detailed descriptions, high-quality images, and interactive maps, finding your perfect home has never been easier.</p>
+    </div>
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="static\123.jpg" alt="Aaditya" style="width:100%">
+          <div class="container">
+            <h2>Aaditya Chouhan</h2>
+            <p class="title">Software Developer</p>
+            <p></p>
+            <p>aadityachouhan787898@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
