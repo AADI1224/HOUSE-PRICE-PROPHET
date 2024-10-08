@@ -41,7 +41,7 @@ After setting up the project, go to http://127.0.0.1:8000/ in your browser. Ente
 
 # Dataset
 The model is trained on a real estate dataset, which includes data such as house prices, location, size, and number of rooms. Here I've used the "USA_Housing.csv".
-you can found more on https://www.kaggle.com/datasets.
+You can found more on https://www.kaggle.com/datasets.
 
 # License
 Licensed under the MIT License. 
