@@ -3,7 +3,7 @@ A web application that predicts house prices using machine learning models. The 
 
 # Features
 1. Predict house prices based on user inputs.
-2. achine learning model integration.
+2. Machine learning model integration.
 3. User-friendly web interface for easy input.
 
 # Tech Stack
